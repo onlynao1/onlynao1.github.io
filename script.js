@@ -38,12 +38,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.5 });
 
-document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
-});
-
 function toggleNav() {
     const sideMenu = document.querySelector('.side-menu');
     sideMenu.classList.toggle('active');
 }
+
 
