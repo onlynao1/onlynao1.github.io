@@ -1,7 +1,7 @@
 // Header che si riduce allo scroll
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
-    const logo = document.querySelector('.logo img');
+    const logo = document.querySelector('.logo');
     if (window.scrollY > 100) {
         header.classList.add('shrink');
         logo.classList.add('shrink'); // Aggiunta riduzione logo al scroll
@@ -41,8 +41,3 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
-
-function toggleNav() {
-    const sideMenu = document.querySelector('.side-menu');
-    sideMenu.classList.toggle('active');
-}
