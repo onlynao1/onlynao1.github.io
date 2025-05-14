@@ -396,3 +396,29 @@ footer {
   transition: transform 0.3s ease-in-out;
 }
 
+.contact-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contact-icon img {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #1E8BC3;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #0e5d85;
+}
+
+
