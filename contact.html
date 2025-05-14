@@ -1,9 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-<title>contact.html</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - onlyNAO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Contatta onlyNAO per informazioni sull'innovazione sportiva con robotica e intelligenza artificiale">
+    <meta name="theme-color" content="#1E8BC3">
 </head>
 <body>
-<h1>contact.html</h1>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="./Immagini/logo.jpeg" alt="Logo onlyNAO" width="120" height="120" style="border-radius: 7px;">
+        </div>        
+        <nav>
+            <ul>
+                <li><a href="https://onlynao1.github.io/about.html">Chi siamo</a></li>
+                <li><a href="https://onlynao1.github.io/features.html">Funzionalità</a></li>
+                <li><a href="https://onlynao1.github.io/applications.html">Applicazioni</a></li>
+                <li><a href="https://onlynao1.github.io/projects.html">Progetti</a></li>
+                <li><a href="https://onlynao1.github.io/contact.html" class="active">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sezione principale -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Contattaci</h1>
+            <p>Siamo qui per rispondere alle tue domande e discutere possibili collaborazioni</p>
+        </div>
+    </section>
+
+    <!-- Contatti principali -->
+    <section class="contact-info">
+        <div class="content">
+            <h2>Come Raggiungerci</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <img src="https://via.placeholder.com/50" alt="Email">
+                    </div>
+                    <h3>Email</h3>
+                    <p>onlynaocannizzaro@gmail.com</p>
+                    <p>Per informazioni generali, domande tecniche o richieste di collaborazione.</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <img src="https://via.placeholder.com/50" alt="Indirizzo">
+                    </div>
+                    <h3>Indirizzo</h3>
+                    <p>ITIS Cannizzaro</p>
+                    <p>Via Raffaello Sanzio, 2</p>
+                    <p>20017 Rho (MI)</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <img src="https://via.placeholder.com/50" alt="Social">
+                    </div>
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario di contatto -->
+    <section class="contact-form-section">
+        <div class="content">
+            <h2>Inviaci un Messaggio</h2>
+            <p>Compila il formulario sottostante e ti risponderemo al più presto.</p>
+            
+            <form class="contact-form" action="https://formsubmit.co/onlynaocannizzaro@gmail.com" method="POST">
+                <!-- Disattiva il captcha -->
+                <input type="hidden" name="_captcha" value="false">
+    
+                <!-- Pagina di ringraziamento dopo l'invio -->
+                <input type="hidden" name="_next" value="https://onlynao1.github.io/grazie.html">
+    
+                <div class="form-group">
+                    <label for="nome">Nome *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="La tua email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="oggetto">Oggetto</label>
+                    <input type="text" id="oggetto" name="oggetto" placeholder="Oggetto del messaggio">
+                </div>
+                
+                <div class="form-group">
+                    <label for="messaggio">Messaggio *</label>
+                    <textarea id="messaggio" name="messaggio" placeholder="Il tuo messaggio" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tipo">Tipo di richiesta</label>
+                    <select id="tipo" name="tipo">
+                        <option value="informazioni">Richiesta di informazioni</option>
+                        <option value="collaborazione">Proposta di collaborazione</option>
+                        <option value="demo">Richiesta di demo</option>
+                        <option value="altro">Altro</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="submit-button">Invia Messaggio</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="content">
+            <h2>Domande Frequenti</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Come posso vedere NAO in azione?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Organizziamo regolarmente dimostrazioni presso la nostra sede all'ITIS Cannizzaro di Rho. Puoi richiedere di partecipare a una dimostrazione compilando il formulario di contatto e selezionando "Richiesta di demo" come tipo di richiesta.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>onlyNAO offre servizi di consulenza per club sportivi?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì, offriamo servizi di consulenza personalizzati per club sportivi che desiderano implementare la tecnologia robotica nei loro programmi di allenamento. Contattaci per maggiori informazioni sulle nostre soluzioni per club.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Posso utilizzare NAO per la mia scuola o associazione sportiva?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Assolutamente! Abbiamo programmi specifici per scuole e associazioni sportive di ogni dimensione. Contattaci per discutere le tue esigenze specifiche e trovare la soluzione più adatta.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Come posso collaborare con onlyNAO?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Siamo sempre aperti a nuove collaborazioni, sia con professionisti del settore sportivo che con esperti di tecnologia, robotica e intelligenza artificiale. Inviaci una proposta dettagliata attraverso il nostro formulario di contatto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="contact-cta">
+        <div class="content">
+            <h2>Pronto a Rivoluzionare lo Sport con NAO?</h2>
+            <p>Non aspettare oltre! Contattaci oggi stesso per scoprire come la robotica e l'intelligenza artificiale possono trasformare la tua esperienza sportiva.</p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-button">Richiedi una Demo</a>
+                <a href="#" class="cta-button secondary">Scarica la Brochure</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 onlyNAO. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
