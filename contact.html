@@ -81,50 +81,43 @@
     </section>
 
     <!-- Formulario di contatto -->
-    <section class="contact-form-section">
-        <div class="content">
-            <h2>Inviaci un Messaggio</h2>
-            <p>Compila il formulario sottostante e ti risponderemo al più presto.</p>
-            
-            <form class="contact-form" action="https://formsubmit.co/onlynaocannizzaro@gmail.com" method="POST">
-                <!-- Disattiva il captcha -->
-                <input type="hidden" name="_captcha" value="false">
-    
-                <!-- Pagina di ringraziamento dopo l'invio -->
-                <input type="hidden" name="_next" value="https://onlynao1.github.io/grazie.html">
-    
-                <div class="form-group">
-                    <label for="nome">Nome *</label>
-                    <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" placeholder="La tua email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="oggetto">Oggetto</label>
-                    <input type="text" id="oggetto" name="oggetto" placeholder="Oggetto del messaggio">
-                </div>
-                
-                <div class="form-group">
-                    <label for="messaggio">Messaggio *</label>
-                    <textarea id="messaggio" name="messaggio" placeholder="Il tuo messaggio" required></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="tipo">Tipo di richiesta</label>
-                    <select id="tipo" name="tipo">
-                        <option value="informazioni">Richiesta di informazioni</option>
-                        <option value="collaborazione">Proposta di collaborazione</option>
-                        <option value="demo">Richiesta di demo</option>
-                        <option value="altro">Altro</option>
-                    </select>
-                </div>
-                
-                <button type="submit" class="submit-button">Invia Messaggio</button>
-            </form>
+    <form class="contact-form" action="https://formsubmit.co/onlynaocannizzaro@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://onlynao1.github.io/grazie.html">
+
+    <div class="form-grid">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono">
+        </div>
+        <div class="form-group">
+            <label for="ruolo">Ruolo</label>
+            <select id="ruolo" name="ruolo">
+                <option value="">Seleziona</option>
+                <option>Studente</option>
+                <option>Allenatore</option>
+                <option>Atleta</option>
+                <option>Partner Tecnologico</option>
+                <option>Altro</option>
+            </select>
+        </div>
+        <div class="form-group full">
+            <label for="messaggio">Messaggio</label>
+            <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+        </div>
+    </div>
+
+    <button type="submit" class="cta-button">Invia</button>
+</form>
+
         </div>
     </section>
 
