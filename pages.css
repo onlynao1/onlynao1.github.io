@@ -97,3 +97,8 @@ section h2 {
     color: #555;
     margin-top: 8px;
 }
+
+.spacer {
+    height: 130px; /* altezza uguale o leggermente superiore all'header */
+}
+
