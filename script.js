@@ -1,32 +1,48 @@
-// Header che si riduce allo scroll
+// Header che si riduce o scompare allo scroll
+let lastScroll = 0;
+const header = document.querySelector('.header');
+const logo = document.querySelector('.logo');
+
 window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    const logo = document.querySelector('.logo');
-    if (window.scrollY > 100) {
+    const currentScroll = window.scrollY;
+
+    // Header shrink
+    if (currentScroll > 100) {
         header.classList.add('shrink');
-        logo.classList.add('shrink'); // Aggiunta riduzione logo al scroll
+        logo.classList.add('shrink');
     } else {
         header.classList.remove('shrink');
-        logo.classList.remove('shrink'); // Rimuovi la riduzione del logo
+        logo.classList.remove('shrink');
     }
+
+    // Header hide on scroll down
+    if (currentScroll > lastScroll && currentScroll > 100) {
+        header.classList.add('hide-header');
+    } else {
+        header.classList.remove('hide-header');
+    }
+
+    lastScroll = currentScroll;
 });
 
-// Smooth scroll con offset per l'header
-document.querySelectorAll('nav a').forEach(link => {
+// Smooth scroll solo per i link interni (es. #about)
+document.querySelectorAll('nav a[href^="#"]').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
         const targetSection = document.querySelector(targetId);
         const headerHeight = document.querySelector('.header').offsetHeight;
 
-        window.scrollTo({
-            top: targetSection.offsetTop - headerHeight,
-            behavior: 'smooth'
-        });
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop - headerHeight,
+                behavior: 'smooth'
+            });
+        }
     });
 });
 
-// Intersection Observer per gli elementi attivi
+// Intersection Observer per attivare il link corrente nel menu
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -41,19 +57,3 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
-
-let lastScroll = 0;
-const header = document.querySelector('.header');
-
-window.addEventListener('scroll', () => {
-  const currentScroll = window.scrollY;
-
-  if (currentScroll > lastScroll && currentScroll > 100) {
-    header.classList.add('hide-header');
-  } else {
-    header.classList.remove('hide-header');
-  }
-
-  lastScroll = currentScroll;
-});
-
