@@ -98,3 +98,6 @@ section h2 {
     margin-top: 8px;
 }
 
+.spacer {
+    height: 130px; /* altezza uguale o leggermente superiore all'header */
+}
