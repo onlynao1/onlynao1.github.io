@@ -131,12 +131,22 @@ section h2 {
 .form-group input,
 .form-group select,
 .form-group textarea {
-    padding: 12px;
+    padding: 14px 16px;
+    height: 48px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
     font-family: inherit;
+    box-sizing: border-box;
 }
+
+/* Textarea ha altezza diversa ma resta visivamente armonica */
+.form-group textarea {
+    height: auto;
+    min-height: 120px;
+    resize: vertical;
+}
+
 
 .form-group.full {
     grid-column: 1 / -1;
