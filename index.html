@@ -134,10 +134,16 @@
     <!-- Contatti -->
     <section id="contact" class="contact">
         <h2>Contattaci</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Messaggio" required></textarea>
+        <form class="contact-form" action="https://formsubmit.co/onlynaocannizzaro@gmail.com" method="POST">
+            <!-- Disattiva il captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Pagina di ringraziamento dopo l'invio (opzionale) -->
+            <input type="hidden" name="_next" value="grazie.html">
+
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="messaggio" placeholder="Messaggio" required></textarea>
             <button type="submit">Invia</button>
         </form>
     </section>
