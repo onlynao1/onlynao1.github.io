@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,21 @@
     <link rel="icon" href="./Immagini/Icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive-css.css">
-    <link rel="stylesheet" href="pages.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Chi siamo - onlyNAO, innovazione sportiva con robotica e intelligenza artificiale">
+    <meta name="description"
+        content="Chi siamo - onlyNAO, innovazione sportiva con robotica e intelligenza artificiale">
     <meta name="theme-color" content="#1E8BC3">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <div class="logo">
             <a href="https://onlynao1.github.io/index.html">
-                <img src="./Immagini/logoSito.jpeg" alt="Logo onlyNAO" width="120" height="120" style="border-radius: 7px;">
+                <img src="./Immagini/logoSito.jpeg" alt="Logo onlyNAO" width="120" height="120"
+                    style="border-radius: 7px;">
             </a>
-        </div>        
+        </div>
         <nav>
             <ul>
                 <li><a href="https://onlynao1.github.io/about.html" class="active">Chi siamo</a></li>
@@ -30,6 +33,22 @@
             </ul>
         </nav>
     </header>
+
+    <button class="mobile-menu-toggle" aria-label="Apri menu" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="mobile-sidebar" id="mobileSidebar">
+        <ul>
+            <li><a href="https://onlynao1.github.io/about.html">Chi siamo</a></li>
+            <li><a href="https://onlynao1.github.io/features.html">Funzionalità</a></li>
+            <li><a href="https://onlynao1.github.io/applications.html">Applicazioni</a></li>
+            <li><a href="https://onlynao1.github.io/projects.html">Progetti</a></li>
+            <li><a href="https://onlynao1.github.io/contact.html">Contatti</a></li>
+        </ul>
+    </nav>
 
     <div class="spacer"></div>
 
@@ -45,9 +64,14 @@
     <section class="about-section">
         <div class="content">
             <h2>La Nostra Storia</h2>
-            <p>onlyNAO nasce dall'idea innovativa degli studenti della 3AINF dell'ITIS Cannizzaro di Rho. Il nostro obiettivo è rivoluzionare il mondo dello sport attraverso l'applicazione della robotica e dell'intelligenza artificiale.</p>
-            <p>La nostra missione è quella di sviluppare soluzioni tecnologiche avanzate che possano migliorare le prestazioni degli atleti, offrire nuovi metodi di allenamento e rendere lo sport più accessibile a tutti.</p>
-            <p>Abbiamo scelto il robot NAO come piattaforma principale per le nostre applicazioni grazie alla sua versatilità, capacità di movimento e potenziale di interazione con gli esseri umani.</p>
+            <p>onlyNAO nasce dall'idea innovativa degli studenti della 3AINF dell'ITIS Cannizzaro di Rho. Il nostro
+                obiettivo è rivoluzionare il mondo dello sport attraverso l'applicazione della robotica e
+                dell'intelligenza artificiale.</p>
+            <p>La nostra missione è quella di sviluppare soluzioni tecnologiche avanzate che possano migliorare le
+                prestazioni degli atleti, offrire nuovi metodi di allenamento e rendere lo sport più accessibile a
+                tutti.</p>
+            <p>Abbiamo scelto il robot NAO come piattaforma principale per le nostre applicazioni grazie alla sua
+                versatilità, capacità di movimento e potenziale di interazione con gli esseri umani.</p>
         </div>
     </section>
 
@@ -55,62 +79,70 @@
     <section class="team-section">
         <div class="content">
             <h2>Il Nostro Team</h2>
-            <p>Siamo i ragazzi del gruppo A della 3AINF dell'ITIS Cannizzaro di Rho. Il nostro team è organizzato con ruoli specifici per garantire un lavoro efficiente e produttivo:</p>
-            
+            <p>Siamo i ragazzi del gruppo A della 3AINF dell'ITIS Cannizzaro di Rho. Il nostro team è organizzato con
+                ruoli specifici per garantire un lavoro efficiente e produttivo:</p>
+
             <div class="team-grid">
                 <div class="team-member">
                     <div class="team-member-info">
                         <h3>CEO</h3>
                         <p>Michele Nero</p>
-                        <p class="role-description">Responsabile della direzione generale del progetto e della visione strategica complessiva.</p>
+                        <p class="role-description">Responsabile della direzione generale del progetto e della visione
+                            strategica complessiva.</p>
                     </div>
                 </div>
-                
+
                 <div class="team-member">
                     <div class="team-member-info">
                         <h3>PROJECT MANAGER</h3>
                         <p>Cristian Ferrigolo</p>
-                        <p class="role-description">Coordina tutte le attività del progetto e assicura il rispetto delle tempistiche e degli obiettivi.</p>
+                        <p class="role-description">Coordina tutte le attività del progetto e assicura il rispetto delle
+                            tempistiche e degli obiettivi.</p>
                     </div>
                 </div>
-                
+
                 <div class="team-member">
                     <div class="team-member-info">
                         <h3>PRODUCT DESIGNER</h3>
                         <p>Manuel Manfredi</p>
-                        <p class="role-description">Responsabile del design e dell'esperienza utente dei nostri prodotti e applicazioni.</p>
+                        <p class="role-description">Responsabile del design e dell'esperienza utente dei nostri prodotti
+                            e applicazioni.</p>
                     </div>
                 </div>
-                
+
                 <div class="team-member team-group">
                     <div class="team-member-info">
                         <h3>SVILUPPATORI</h3>
                         <p>Andrea Restelli<br>Luca Borghetti<br>Riccardo Simonetti<br>Riccardo Marafante</p>
-                        <p class="role-description">Responsabili della programmazione del robot NAO e dello sviluppo delle applicazioni software.</p>
+                        <p class="role-description">Responsabili della programmazione del robot NAO e dello sviluppo
+                            delle applicazioni software.</p>
                     </div>
                 </div>
-                
+
                 <div class="team-member team-group">
                     <div class="team-member-info">
                         <h3>MARKETING E SOCIAL MEDIA</h3>
                         <p>Christian Pironti<br>Alessandro Scorrano</p>
-                        <p class="role-description">Curano la presenza online e la promozione del progetto sui vari canali di comunicazione.</p>
+                        <p class="role-description">Curano la presenza online e la promozione del progetto sui vari
+                            canali di comunicazione.</p>
                     </div>
                 </div>
-                
+
                 <div class="team-member team-group">
                     <div class="team-member-info">
                         <h3>FINANZE E BUSINESS PLAN</h3>
                         <p>Mattia Vargas<br>Leonardo Paparo</p>
-                        <p class="role-description">Si occupano della pianificazione finanziaria e dello sviluppo del modello di business.</p>
+                        <p class="role-description">Si occupano della pianificazione finanziaria e dello sviluppo del
+                            modello di business.</p>
                     </div>
                 </div>
-                
+
                 <div class="team-member">
                     <div class="team-member-info">
                         <h3>DOCUMENTAZIONE E PRESENTAZIONE</h3>
                         <p>Christian Tognetti</p>
-                        <p class="role-description">Responsabile della documentazione tecnica e delle presentazioni pubbliche del progetto.</p>
+                        <p class="role-description">Responsabile della documentazione tecnica e delle presentazioni
+                            pubbliche del progetto.</p>
                     </div>
                 </div>
             </div>
@@ -121,7 +153,9 @@
     <section class="vision-section">
         <div class="content">
             <h2>La Nostra Visione</h2>
-            <p>onlyNAO si propone di diventare un punto di riferimento nell'innovazione sportiva attraverso la robotica. Crediamo fermamente che la tecnologia possa migliorare significativamente il modo in cui gli atleti si allenano e competono.</p>
+            <p>onlyNAO si propone di diventare un punto di riferimento nell'innovazione sportiva attraverso la robotica.
+                Crediamo fermamente che la tecnologia possa migliorare significativamente il modo in cui gli atleti si
+                allenano e competono.</p>
             <p>La nostra visione include:</p>
             <ul>
                 <li>Sviluppare assistenti robotici in grado di analizzare e migliorare le prestazioni degli atleti</li>
@@ -139,7 +173,8 @@
             <div class="values-grid">
                 <div class="value-item">
                     <h3>Innovazione</h3>
-                    <p>Cerchiamo costantemente nuove soluzioni e approcci per migliorare lo sport attraverso la tecnologia.</p>
+                    <p>Cerchiamo costantemente nuove soluzioni e approcci per migliorare lo sport attraverso la
+                        tecnologia.</p>
                 </div>
                 <div class="value-item">
                     <h3>Collaborazione</h3>
@@ -164,4 +199,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
