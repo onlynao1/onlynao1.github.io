@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,19 @@
     <link rel="icon" href="./Immagini/Icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive-css.css">
-    <link rel="stylesheet" href="pages.css">
     <meta name="description" content="Applicazioni del robot NAO nello sport - onlyNAO">
     <meta name="theme-color" content="#1E8BC3">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <div class="logo">
             <a href="https://onlynao1.github.io/index.html">
-                <img src="./Immagini/logoSito.jpeg" alt="Logo onlyNAO" width="120" height="120" style="border-radius: 7px;">
+                <img src="./Immagini/logoSito.jpeg" alt="Logo onlyNAO" width="120" height="120"
+                    style="border-radius: 7px;">
             </a>
-        </div>        
+        </div>
         <nav>
             <ul>
                 <li><a href="https://onlynao1.github.io/about.html">Chi siamo</a></li>
@@ -29,6 +31,22 @@
             </ul>
         </nav>
     </header>
+
+    <button class="mobile-menu-toggle" aria-label="Apri menu" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="mobile-sidebar" id="mobileSidebar">
+        <ul>
+            <li><a href="https://onlynao1.github.io/about.html">Chi siamo</a></li>
+            <li><a href="https://onlynao1.github.io/features.html">Funzionalità</a></li>
+            <li><a href="https://onlynao1.github.io/applications.html">Applicazioni</a></li>
+            <li><a href="https://onlynao1.github.io/projects.html">Progetti</a></li>
+            <li><a href="https://onlynao1.github.io/contact.html">Contatti</a></li>
+        </ul>
+    </nav>
 
     <div class="spacer"></div>
 
@@ -44,18 +62,21 @@
     <section class="application-sections">
         <div class="content">
             <h2>Sport in cui NAO è utilizzato</h2>
-            <p>Abbiamo implementato il robot NAO in diverse discipline sportive per migliorare allenamenti, tecnica e coinvolgimento degli atleti. Ecco alcuni esempi:</p>
+            <p>Abbiamo implementato il robot NAO in diverse discipline sportive per migliorare allenamenti, tecnica e
+                coinvolgimento degli atleti. Ecco alcuni esempi:</p>
 
             <div class="application-grid">
                 <div class="application-item">
                     <img src="Immagini/calcio.jpg" alt="Calcio">
                     <h3>Calcio</h3>
-                    <p>NAO agisce come un assistente allenatore per migliorare la tecnica individuale e la strategia di gioco.</p>
+                    <p>NAO agisce come un assistente allenatore per migliorare la tecnica individuale e la strategia di
+                        gioco.</p>
                 </div>
                 <div class="application-item">
                     <img src="Immagini/tennis.jpg" alt="Tennis">
                     <h3>Tennis</h3>
-                    <p>Tramite sensori e AI, NAO fornisce feedback in tempo reale su servizio, colpi e posizionamento.</p>
+                    <p>Tramite sensori e AI, NAO fornisce feedback in tempo reale su servizio, colpi e posizionamento.
+                    </p>
                 </div>
                 <div class="application-item">
                     <img src="Immagini/atletica.jpg" alt="Atletica">
@@ -71,10 +92,14 @@
         <div class="content">
             <h2>Altre Applicazioni Innovative</h2>
             <ul>
-                <li><strong>Coaching Interattivo:</strong> NAO comunica direttamente con gli atleti per guidarli negli esercizi.</li>
-                <li><strong>Analisi Biomeccanica:</strong> Utilizza telecamere e sensori per valutare precisione e forma dei movimenti.</li>
-                <li><strong>Assistenza in Riabilitazione:</strong> Aiuta atleti in recupero a seguire protocolli riabilitativi con movimenti corretti.</li>
-                <li><strong>Simulazioni Sportive:</strong> Crea scenari realistici per preparare gli atleti a diverse situazioni di gara.</li>
+                <li><strong>Coaching Interattivo:</strong> NAO comunica direttamente con gli atleti per guidarli negli
+                    esercizi.</li>
+                <li><strong>Analisi Biomeccanica:</strong> Utilizza telecamere e sensori per valutare precisione e forma
+                    dei movimenti.</li>
+                <li><strong>Assistenza in Riabilitazione:</strong> Aiuta atleti in recupero a seguire protocolli
+                    riabilitativi con movimenti corretti.</li>
+                <li><strong>Simulazioni Sportive:</strong> Crea scenari realistici per preparare gli atleti a diverse
+                    situazioni di gara.</li>
             </ul>
         </div>
     </section>
@@ -83,7 +108,8 @@
     <section class="participation">
         <div class="content">
             <h2>Vuoi portare NAO nel tuo sport?</h2>
-            <p>Che tu sia un allenatore, atleta o appassionato di tecnologia, contattaci per scoprire come integrare NAO nella tua disciplina!</p>
+            <p>Che tu sia un allenatore, atleta o appassionato di tecnologia, contattaci per scoprire come integrare NAO
+                nella tua disciplina!</p>
             <div class="spacer"></div>
             <a href="contact.html" class="cta-button">Contattaci Ora</a>
         </div>
@@ -96,4 +122,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
