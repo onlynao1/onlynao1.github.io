@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,21 @@
     <link rel="icon" href="./Immagini/Icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive-css.css">
-    <link rel="stylesheet" href="pages.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Contatta onlyNAO per informazioni sull'innovazione sportiva con robotica e intelligenza artificiale">
+    <meta name="description"
+        content="Contatta onlyNAO per informazioni sull'innovazione sportiva con robotica e intelligenza artificiale">
     <meta name="theme-color" content="#1E8BC3">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <div class="logo">
             <a href="https://onlynao1.github.io/index.html">
-                <img src="./Immagini/logoSito.jpeg" alt="Logo onlyNAO" width="120" height="120" style="border-radius: 7px;">
+                <img src="./Immagini/logoSito.jpeg" alt="Logo onlyNAO" width="120" height="120"
+                    style="border-radius: 7px;">
             </a>
-        </div>        
+        </div>
         <nav>
             <ul>
                 <li><a href="https://onlynao1.github.io/about.html">Chi siamo</a></li>
@@ -30,6 +33,22 @@
             </ul>
         </nav>
     </header>
+
+    <button class="mobile-menu-toggle" aria-label="Apri menu" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="mobile-sidebar" id="mobileSidebar">
+        <ul>
+            <li><a href="https://onlynao1.github.io/about.html">Chi siamo</a></li>
+            <li><a href="https://onlynao1.github.io/features.html">Funzionalità</a></li>
+            <li><a href="https://onlynao1.github.io/applications.html">Applicazioni</a></li>
+            <li><a href="https://onlynao1.github.io/projects.html">Progetti</a></li>
+            <li><a href="https://onlynao1.github.io/contact.html">Contatti</a></li>
+        </ul>
+    </nav>
 
     <div class="spacer"></div>
 
@@ -45,36 +64,39 @@
     <section class="contact-info">
         <div class="content">
             <h2>Come Raggiungerci</h2>
-            
+
             <div class="contact-grid">
                 <div class="contact-method">
                     <h3>Email</h3>
-                    <div class="contact-icon">
-                        <img src="https://via.placeholder.com/50" alt="Email">
-                    </div>
-                    <p><a href="mailto:onlynaocannizzaro@gmail.com" class="email-link">onlynaocannizzaro@gmail.com</a></p>
+                    <p><a href="mailto:onlynaocannizzaro@gmail.com" class="email-link">onlynaocannizzaro@gmail.com</a>
+                    </p>
                     <p>Per informazioni generali, domande tecniche o richieste di collaborazione.</p>
                 </div>
-                
+
                 <div class="contact-method">
                     <h3>Indirizzo</h3>
                     <div class="contact-icon">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d607.4194678398591!2d9.039069024777723!3d45.526022821393404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sit!2sit!4v1747219355000!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d607.4194678398591!2d9.039069024777723!3d45.526022821393404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sit!2sit!4v1747219355000!5m2!1sit!2sit"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <p>ITIS Cannizzaro</p>
                     <p>Via Raffaello Sanzio, 2</p>
                     <p>20017 Rho (MI)</p>
                 </div>
-                
+
                 <div class="contact-method">
                     <h3>Social Media</h3>
                     <div class="contact-icon">
                         <img src="./Immagini/Instagram.jpeg" alt="Instagram" width="20" height="20">
-                        <a href="https://www.instagram.com/_only.nao/?igsh=NjVnajF4ZGk0Y3lr#" class="social-link">@_only.nao</a>
+                        <a href="https://www.instagram.com/_only.nao/?igsh=NjVnajF4ZGk0Y3lr#"
+                            class="social-link">@_only.nao</a>
                     </div>
                     <div class="contact-icon">
                         <img src="./Immagini/Tiktok.jpeg" alt="TikTok" width="20" height="20">
-                        <a href="https://www.instagram.com/_only.nao/?igsh=NjVnajF4ZGk0Y3lr#" class="social-link">@ACCOUNT TIKTOK</a>
+                        <a href="https://www.tiktok.com/@onlynaocannizza?_t=ZN-8wagDolVjMM&_r=1"
+                            class="social-link">@onlynaocannizza</a>
                     </div>
                 </div>
             </div>
@@ -83,84 +105,92 @@
 
     <!-- Formulario di contatto -->
     <form class="contact-form" action="https://formsubmit.co/onlynaocannizzaro@gmail.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://onlynao1.github.io/grazie.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://onlynao1.github.io/grazie.html">
 
-    <div class="form-grid">
-        <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required>
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <label for="ruolo">Ruolo</label>
+                <select id="ruolo" name="ruolo">
+                    <option value="">Seleziona</option>
+                    <option>Studente</option>
+                    <option>Allenatore</option>
+                    <option>Atleta</option>
+                    <option>Partner Tecnologico</option>
+                    <option>Altro</option>
+                </select>
+            </div>
+            <div class="form-group full">
+                <label for="messaggio">Messaggio</label>
+                <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="telefono">Telefono</label>
-            <input type="tel" id="telefono" name="telefono">
-        </div>
-        <div class="form-group">
-            <label for="ruolo">Ruolo</label>
-            <select id="ruolo" name="ruolo">
-                <option value="">Seleziona</option>
-                <option>Studente</option>
-                <option>Allenatore</option>
-                <option>Atleta</option>
-                <option>Partner Tecnologico</option>
-                <option>Altro</option>
-            </select>
-        </div>
-        <div class="form-group full">
-            <label for="messaggio">Messaggio</label>
-            <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
-        </div>
+
+        <button type="submit" class="cta-button">Invia</button>
+    </form>
+
     </div>
-
-    <button type="submit" class="cta-button">Invia</button>
-</form>
-
-        </div>
     </section>
 
     <!-- FAQ -->
     <section class="faq">
         <div class="content">
             <h2>Domande Frequenti</h2>
-            
+
             <div class="faq-list">
                 <div class="faq-item">
                     <div class="faq-question">
                         <h3>Come posso vedere NAO in azione?</h3>
                     </div>
                     <div class="faq-answer">
-                        <p>Organizziamo regolarmente dimostrazioni presso la nostra sede all'ITIS Cannizzaro di Rho. Puoi richiedere di partecipare a una dimostrazione compilando il formulario di contatto e selezionando "Richiesta di demo" come tipo di richiesta.</p>
+                        <p>Organizziamo regolarmente dimostrazioni presso la nostra sede all'ITIS Cannizzaro di Rho.
+                            Puoi richiedere di partecipare a una dimostrazione compilando il formulario di contatto e
+                            selezionando "Richiesta di demo" come tipo di richiesta.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <div class="faq-question">
                         <h3>onlyNAO offre servizi di consulenza per club sportivi?</h3>
                     </div>
                     <div class="faq-answer">
-                        <p>Sì, offriamo servizi di consulenza personalizzati per club sportivi che desiderano implementare la tecnologia robotica nei loro programmi di allenamento. Contattaci per maggiori informazioni sulle nostre soluzioni per club.</p>
+                        <p>Sì, offriamo servizi di consulenza personalizzati per club sportivi che desiderano
+                            implementare la tecnologia robotica nei loro programmi di allenamento. Contattaci per
+                            maggiori informazioni sulle nostre soluzioni per club.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <div class="faq-question">
                         <h3>Posso utilizzare NAO per la mia scuola o associazione sportiva?</h3>
                     </div>
                     <div class="faq-answer">
-                        <p>Assolutamente! Abbiamo programmi specifici per scuole e associazioni sportive di ogni dimensione. Contattaci per discutere le tue esigenze specifiche e trovare la soluzione più adatta.</p>
+                        <p>Assolutamente! Abbiamo programmi specifici per scuole e associazioni sportive di ogni
+                            dimensione. Contattaci per discutere le tue esigenze specifiche e trovare la soluzione più
+                            adatta.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <div class="faq-question">
                         <h3>Come posso collaborare con onlyNAO?</h3>
                     </div>
                     <div class="faq-answer">
-                        <p>Siamo sempre aperti a nuove collaborazioni, sia con professionisti del settore sportivo che con esperti di tecnologia, robotica e intelligenza artificiale. Inviaci una proposta dettagliata attraverso il nostro formulario di contatto.</p>
+                        <p>Siamo sempre aperti a nuove collaborazioni, sia con professionisti del settore sportivo che
+                            con esperti di tecnologia, robotica e intelligenza artificiale. Inviaci una proposta
+                            dettagliata attraverso il nostro formulario di contatto.</p>
                     </div>
                 </div>
             </div>
@@ -171,7 +201,8 @@
     <section class="contact-cta">
         <div class="content">
             <h2>Pronto a Rivoluzionare lo Sport con NAO?</h2>
-            <p>Non aspettare oltre! Contattaci oggi stesso per scoprire come la robotica e l'intelligenza artificiale possono trasformare la tua esperienza sportiva.</p>
+            <p>Non aspettare oltre! Contattaci oggi stesso per scoprire come la robotica e l'intelligenza artificiale
+                possono trasformare la tua esperienza sportiva.</p>
             <div class="spacer"></div>
             <div class="cta-buttons">
                 <a href="#" class="cta-button secondary">Scarica la Relazione di lavoro</a>
@@ -186,4 +217,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
