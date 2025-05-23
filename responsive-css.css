@@ -1,187 +1,197 @@
-/* Responsive Styles */
-
-/* Base styles remain the same */
+/* Responsive Styles migliorati per contenuti coerenti con lo shop */
 
 /* Tablet Styles (768px and below) */
 @media screen and (max-width: 768px) {
-    /* Header adjustments */
     .header {
         padding: 15px 0;
     }
-    
+
     .logo img {
         width: 100px;
         height: 100px;
     }
-    
+
     header nav ul {
         flex-wrap: wrap;
     }
-    
+
     header nav ul li {
         margin: 5px 10px;
     }
-    
+
     header nav ul li a {
         font-size: 16px;
         padding: 6px 15px;
     }
-    
-    /* Hero section */
-    .hero-content h1 {
-        font-size: 40px;
+
+    .hero-content h1,
+    .page-hero-content h1 {
+        font-size: 36px;
     }
-    
-    .hero-content p {
-        font-size: 20px;
-        margin-bottom: 30px;
+
+    .hero-content p,
+    .page-hero-content p {
+        font-size: 18px;
+        margin-bottom: 25px;
     }
-    
-    /* Feature section */
-    .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    /* Application section */
-    .application-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    
-    /* Project section */
-    .project-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    /* General sizing */
+
+    section h2,
     .about h2,
     .features h2,
     .applications h2,
     .projects h2,
     .contact h2 {
-        font-size: 36px;
+        font-size: 32px;
     }
+
+    .content {
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    .feature-grid,
+    .application-grid,
+    .project-grid,
+    .team-grid,
+    .values-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+    }
+
+    .form-group.full {
+        grid-column: auto;
+    }
+
+    .application-item img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .content {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+
+    .application-item h3 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .application-item p {
+        font-size: 15px;
+    }
+
+    .application-grid {
+        gap: 20px;
+    }
+
+    .application-item img {
+        max-width: 100%;
+    }
+
 }
 
 /* Mobile Styles (480px and below) */
 @media screen and (max-width: 480px) {
-    /* Header adjustments */
     .header {
         padding: 10px 0;
     }
-    
+
     .logo img {
         width: 80px;
         height: 80px;
     }
-    
-    /* Mobile navigation - hamburger menu */
-    header nav {
-        position: relative;
-    }
-    
-    /* Hide the standard navigation on mobile */
-    header nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 10px 0;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    
-    /* Add hamburger menu button */
-    .mobile-menu-btn {
-        display: block;
-        margin: 0 auto;
-        width: 40px;
-        height: 40px;
-        background: none;
-        border: none;
-        position: relative;
-        cursor: pointer;
-    }
-    
-    .mobile-menu-btn span {
-        display: block;
-        width: 30px;
-        height: 3px;
-        background-color: #1E8BC3;
-        margin: 6px auto;
-        transition: all 0.3s ease;
-    }
-    
-    /* When menu is open */
-    header nav.open ul {
-        display: flex;
-    }
-    
-    /* Hero section */
-    .hero-content h1 {
-        font-size: 32px;
-    }
-    
-    .hero-content p {
-        font-size: 18px;
-        margin-bottom: 25px;
-    }
-    
-    .cta-button {
-        padding: 12px 30px;
-        font-size: 16px;
-    }
-    
-    /* Feature section */
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    /* Application section */
-    .application-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    /* General sizing */
-    .about h2,
-    .features h2,
-    .applications h2,
-    .projects h2,
-    .contact h2 {
+
+    .hero-content h1,
+    .page-hero-content h1 {
         font-size: 28px;
     }
-    
-    .about p {
+
+    .hero-content p,
+    .page-hero-content p {
         font-size: 16px;
+        margin-bottom: 20px;
     }
-    
-    /* Contact form */
-    .contact-form input, 
-    .contact-form textarea {
-        padding: 12px;
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 15px;
     }
-    
-    .contact-form button {
-        padding: 12px 30px;
-        font-size: 16px;
+
+    section h2 {
+        font-size: 24px;
+        padding-left: 10px;
+    }
+
+    .content {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    .feature-item,
+    .application-item,
+    .project-item,
+    .team-member,
+    .value-item {
+        padding: 20px;
+    }
+
+    .contact-form,
+    .form-grid {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 14px;
+        font-size: 15px;
+    }
+
+    .contact-form button,
+    .cta-button {
+        font-size: 15px;
+        padding: 12px 24px;
     }
 }
 
 /* Small mobile devices (375px and below) */
 @media screen and (max-width: 375px) {
-    .hero-content h1 {
-        font-size: 26px;
+
+    .hero-content h1,
+    .page-hero-content h1 {
+        font-size: 24px;
     }
-    
-    .hero-content p {
-        font-size: 16px;
+
+    .hero-content p,
+    .page-hero-content p {
+        font-size: 14px;
     }
-    
-    .feature-item,
-    .application-item {
-        padding: 15px;
+
+    .content {
+        font-size: 14px;
+        padding: 0 8px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    .cta-button,
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px 20px;
     }
 }
