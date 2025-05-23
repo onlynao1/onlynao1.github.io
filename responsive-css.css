@@ -98,6 +98,26 @@
 
 }
 
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 15px 20px; 
+    max-width: 100%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+
 /* Mobile Styles (480px and below) */
 @media screen and (max-width: 480px) {
     .header {
