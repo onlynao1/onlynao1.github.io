@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,21 @@
     <link rel="icon" href="./Immagini/Icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive-css.css">
-    <link rel="stylesheet" href="pages.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="I progetti di onlyNAO, innovazione sportiva con robotica e intelligenza artificiale">
+    <meta name="description"
+        content="I progetti di onlyNAO, innovazione sportiva con robotica e intelligenza artificiale">
     <meta name="theme-color" content="#1E8BC3">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <div class="logo">
             <a href="https://onlynao1.github.io/index.html">
-                <img src="./Immagini/logoSito.jpeg" alt="Logo onlyNAO" width="120" height="120" style="border-radius: 7px;">
+                <img src="./Immagini/logoSito.jpeg" alt="Logo onlyNAO" width="120" height="120"
+                    style="border-radius: 7px;">
             </a>
-        </div>        
+        </div>
         <nav>
             <ul>
                 <li><a href="https://onlynao1.github.io/about.html">Chi siamo</a></li>
@@ -30,6 +33,22 @@
             </ul>
         </nav>
     </header>
+
+    <button class="mobile-menu-toggle" aria-label="Apri menu" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="mobile-sidebar" id="mobileSidebar">
+        <ul>
+            <li><a href="https://onlynao1.github.io/about.html">Chi siamo</a></li>
+            <li><a href="https://onlynao1.github.io/features.html">Funzionalità</a></li>
+            <li><a href="https://onlynao1.github.io/applications.html">Applicazioni</a></li>
+            <li><a href="https://onlynao1.github.io/projects.html">Progetti</a></li>
+            <li><a href="https://onlynao1.github.io/contact.html">Contatti</a></li>
+        </ul>
+    </nav>
 
     <div class="spacer"></div>
 
@@ -45,8 +64,9 @@
     <section class="current-projects">
         <div class="content">
             <h2>Progetti in Corso</h2>
-            <p>Attualmente stiamo lavorando su diversi progetti innovativi che utilizzano il robot NAO per rivoluzionare l'esperienza sportiva. Ecco alcuni dei nostri progetti principali:</p>
-            
+            <p>Attualmente stiamo lavorando su diversi progetti innovativi che utilizzano il robot NAO per rivoluzionare
+                l'esperienza sportiva. Ecco alcuni dei nostri progetti principali:</p>
+
             <div class="project-grid">
                 <div class="project-item">
                     <div class="project-image">
@@ -55,7 +75,9 @@
                     <div class="project-details">
                         <h3>NAO Soccer Coach</h3>
                         <p class="project-status">Stato: In fase di sviluppo</p>
-                        <p>Un sistema completo di allenamento per giovani calciatori che utilizza NAO come assistente allenatore. Il robot può dimostrare tecniche, analizzare i movimenti dei giocatori e fornire feedback personalizzati in tempo reale.</p>
+                        <p>Un sistema completo di allenamento per giovani calciatori che utilizza NAO come assistente
+                            allenatore. Il robot può dimostrare tecniche, analizzare i movimenti dei giocatori e fornire
+                            feedback personalizzati in tempo reale.</p>
                         <p>Caratteristiche principali:</p>
                         <ul>
                             <li>Analisi della tecnica di tiro e passaggio</li>
@@ -63,10 +85,11 @@
                             <li>Esercizi personalizzati basati sul livello di abilità</li>
                             <li>Tracciamento dei progressi nel tempo</li>
                         </ul>
-                        <p>Stiamo collaborando con diverse scuole calcio locali per testare e perfezionare questo sistema.</p>
+                        <p>Stiamo collaborando con diverse scuole calcio locali per testare e perfezionare questo
+                            sistema.</p>
                     </div>
                 </div>
-                
+
                 <div class="project-item">
                     <div class="project-image">
                         <img src="https://via.placeholder.com/500x300" alt="Tennis Precision">
@@ -74,7 +97,8 @@
                     <div class="project-details">
                         <h3>Tennis Precision</h3>
                         <p class="project-status">Stato: Prototipo funzionante</p>
-                        <p>Un sistema di analisi avanzata per tennisti che utilizza NAO in combinazione con sensori di movimento e computer vision per fornire un'analisi dettagliata della tecnica di gioco.</p>
+                        <p>Un sistema di analisi avanzata per tennisti che utilizza NAO in combinazione con sensori di
+                            movimento e computer vision per fornire un'analisi dettagliata della tecnica di gioco.</p>
                         <p>Il sistema è in grado di:</p>
                         <ul>
                             <li>Analizzare la meccanica del servizio, del dritto e del rovescio</li>
@@ -82,10 +106,11 @@
                             <li>Suggerire miglioramenti specifici basati sui dati raccolti</li>
                             <li>Creare programmi di allenamento personalizzati</li>
                         </ul>
-                        <p>I test iniziali con tennisti di livello intermedio hanno mostrato miglioramenti significativi nella consistenza e nella precisione dei colpi.</p>
+                        <p>I test iniziali con tennisti di livello intermedio hanno mostrato miglioramenti significativi
+                            nella consistenza e nella precisione dei colpi.</p>
                     </div>
                 </div>
-                
+
                 <div class="project-item">
                     <div class="project-image">
                         <img src="https://via.placeholder.com/500x300" alt="RunAssistant">
@@ -93,7 +118,8 @@
                     <div class="project-details">
                         <h3>RunAssistant</h3>
                         <p class="project-status">Stato: Fase iniziale di sviluppo</p>
-                        <p>Un sistema innovativo che utilizza NAO per analizzare e migliorare la tecnica di corsa degli atleti di tutte le discipline.</p>
+                        <p>Un sistema innovativo che utilizza NAO per analizzare e migliorare la tecnica di corsa degli
+                            atleti di tutte le discipline.</p>
                         <p>Funzionalità previste:</p>
                         <ul>
                             <li>Analisi della postura e del passo durante la corsa</li>
@@ -101,7 +127,8 @@
                             <li>Suggerimenti per migliorare l'economia di corsa</li>
                             <li>Monitoraggio della progressione delle prestazioni</li>
                         </ul>
-                        <p>Stiamo collaborando con fisioterapisti sportivi e biomeccanici per sviluppare algoritmi di analisi precisi e affidabili.</p>
+                        <p>Stiamo collaborando con fisioterapisti sportivi e biomeccanici per sviluppare algoritmi di
+                            analisi precisi e affidabili.</p>
                     </div>
                 </div>
             </div>
@@ -112,27 +139,34 @@
     <section class="future-projects">
         <div class="content">
             <h2>Progetti Futuri</h2>
-            <p>Guardando al futuro, stiamo già pianificando la prossima generazione di applicazioni sportive con NAO. Ecco alcune delle idee innovative su cui stiamo lavorando:</p>
-            
+            <p>Guardando al futuro, stiamo già pianificando la prossima generazione di applicazioni sportive con NAO.
+                Ecco alcune delle idee innovative su cui stiamo lavorando:</p>
+
             <div class="future-project-grid">
                 <div class="future-project">
                     <h3>NAO Team Analyst</h3>
-                    <p>Un sistema che utilizza multiple unità NAO per analizzare le dinamiche di squadra e le interazioni tra giocatori in sport di squadra come calcio, basket e pallavolo.</p>
+                    <p>Un sistema che utilizza multiple unità NAO per analizzare le dinamiche di squadra e le
+                        interazioni tra giocatori in sport di squadra come calcio, basket e pallavolo.</p>
                 </div>
-                
+
                 <div class="future-project">
                     <h3>RehabAssistant</h3>
-                    <p>Un'applicazione specializzata che utilizza NAO per assistere gli atleti durante il processo di riabilitazione dopo un infortunio, monitorando i progressi e garantendo che gli esercizi vengano eseguiti correttamente.</p>
+                    <p>Un'applicazione specializzata che utilizza NAO per assistere gli atleti durante il processo di
+                        riabilitazione dopo un infortunio, monitorando i progressi e garantendo che gli esercizi vengano
+                        eseguiti correttamente.</p>
                 </div>
-                
+
                 <div class="future-project">
                     <h3>Performance Lab</h3>
-                    <p>Un laboratorio completo di analisi delle prestazioni sportive che combina NAO con altre tecnologie avanzate come l'analisi video ad alta velocità, sensori indossabili e realtà aumentata.</p>
+                    <p>Un laboratorio completo di analisi delle prestazioni sportive che combina NAO con altre
+                        tecnologie avanzate come l'analisi video ad alta velocità, sensori indossabili e realtà
+                        aumentata.</p>
                 </div>
-                
+
                 <div class="future-project">
                     <h3>Youth Development Program</h3>
-                    <p>Un programma completo per lo sviluppo di giovani atleti che utilizza NAO per insegnare le basi di vari sport in modo divertente e coinvolgente, adatto a bambini di diverse età.</p>
+                    <p>Un programma completo per lo sviluppo di giovani atleti che utilizza NAO per insegnare le basi di
+                        vari sport in modo divertente e coinvolgente, adatto a bambini di diverse età.</p>
                 </div>
             </div>
         </div>
@@ -143,26 +177,30 @@
         <div class="content">
             <h2>Le Nostre Collaborazioni</h2>
             <p>Per sviluppare soluzioni all'avanguardia, collaboriamo con diverse organizzazioni e istituzioni:</p>
-            
+
             <div class="collaborations-grid">
                 <div class="collaboration-item">
                     <h3>Istituzioni Educative</h3>
-                    <p>Collaboriamo con università e centri di ricerca per sviluppare e testare nuove tecnologie nel campo della robotica sportiva.</p>
+                    <p>Collaboriamo con università e centri di ricerca per sviluppare e testare nuove tecnologie nel
+                        campo della robotica sportiva.</p>
                 </div>
-                
+
                 <div class="collaboration-item">
                     <h3>Club Sportivi</h3>
-                    <p>Lavoriamo a stretto contatto con club sportivi professionistici e dilettantistici per testare e implementare le nostre soluzioni in contesti reali.</p>
+                    <p>Lavoriamo a stretto contatto con club sportivi professionistici e dilettantistici per testare e
+                        implementare le nostre soluzioni in contesti reali.</p>
                 </div>
-                
+
                 <div class="collaboration-item">
                     <h3>Professionisti dello Sport</h3>
-                    <p>Allenatori, preparatori atletici e atleti professionisti ci forniscono preziosi feedback per migliorare costantemente le nostre applicazioni.</p>
+                    <p>Allenatori, preparatori atletici e atleti professionisti ci forniscono preziosi feedback per
+                        migliorare costantemente le nostre applicazioni.</p>
                 </div>
-                
+
                 <div class="collaboration-item">
                     <h3>Aziende Tecnologiche</h3>
-                    <p>Collaboriamo con aziende del settore tecnologico per integrare le ultime innovazioni nei nostri progetti.</p>
+                    <p>Collaboriamo con aziende del settore tecnologico per integrare le ultime innovazioni nei nostri
+                        progetti.</p>
                 </div>
             </div>
         </div>
@@ -175,4 +213,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
