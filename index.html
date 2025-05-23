@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,11 @@
     <link rel="icon" href="./Immagini/Icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive-css.css">
-    <link rel="stylesheet" href="pages.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="onlyNAO - Innovazione Sportiva con robotica e intelligenza artificiale">
     <meta name="theme-color" content="#1E8BC3">
 </head>
+
 <body>
     <!-- Sipario iniziale (cinematico) -->
     <div class="curtain"></div>
@@ -20,7 +21,8 @@
     <header class="header">
         <div class="logo">
             <a href="https://onlynao1.github.io/index.html">
-                <img src="./Immagini/logoSito.jpeg" alt="Logo onlyNAO" width="120" height="120" style="border-radius: 7px;">
+                <img src="./Immagini/logoSito.jpeg" alt="Logo onlyNAO" width="120" height="120"
+                    style="border-radius: 7px;">
             </a>
         </div>
         <nav>
@@ -34,17 +36,77 @@
         </nav>
     </header>
 
+    <button class="mobile-menu-toggle" aria-label="Apri menu" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="mobile-sidebar" id="mobileSidebar">
+        <ul>
+            <li><a href="https://onlynao1.github.io/about.html">Chi siamo</a></li>
+            <li><a href="https://onlynao1.github.io/features.html">Funzionalità</a></li>
+            <li><a href="https://onlynao1.github.io/applications.html">Applicazioni</a></li>
+            <li><a href="https://onlynao1.github.io/projects.html">Progetti</a></li>
+            <li><a href="https://onlynao1.github.io/contact.html">Contatti</a></li>
+        </ul>
+    </nav>
+
     <div class="spacer"></div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-video">
-            <!-- Video GIF come background nell'hero -->
-            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczhuN2JycTd3bTJ0cTRjeWU0dmlxa2toc2hkazA1MzFieW8zbnU2YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3mfxH0nbfVFLt1gTpq/giphy.gif" alt="Hero Video" class="hero-background">
-        </div>                
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczhuN2JycTd3bTJ0cTRjeWU0dmlxa2toc2hkazA1MzFieW8zbnU2YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3mfxH0nbfVFLt1gTpq/giphy.gif"
+                alt="GIF background" />
+        </div>
         <div class="hero-content">
             <h1>Benvenuti in <span>onlyNAO</span></h1>
             <p>Trasformiamo il futuro dello sport con la robotica.</p>
+        </div>
+    </section>
+
+    <section id="shop" class="shop-section">
+        <h2>Shop</h2>
+        <div class="shop-grid">
+            <div class="shop-item">
+                <img src="./Immagini/TappetinoMouse.jpg" alt="Prodotto 1">
+                <h3>Tappetino Per Mouse</h3>
+                <div class="shop-price">€25,90</div>
+                <a href="https://onlynao.creator-spring.com/listing/onlynao-may-2025?product=1959&variation=105516"
+                    class="shop-btn">Acquista</a>
+            </div>
+            <div class="shop-item">
+                <img src="./Immagini/Maglietta.jpg" alt="Prodotto 2">
+                <h3>Maglietta</h3>
+                <div class="shop-price">€19,99</div>
+                <a href="https://onlynao.creator-spring.com/listing/new-onlynao?product=2&variation=2122"
+                    class="shop-btn">Acquista</a>
+            </div>
+            <div class="shop-item">
+                <img src="./Immagini/Cappello.jpg" alt="Prodotto 3">
+                <h3>Cappello</h3>
+                <div class="shop-price">€23,99</div>
+                <a href="https://onlynao.creator-spring.com/listing/onlynao-8678?product=2173&variation=106710" class="shop-btn">Acquista</a>
+            </div>
+            <div class="shop-item">
+                <img src="./Immagini/Ciabatte.jpg" alt="Prodotto 3">
+                <h3>Ciabatte</h3>
+                <div class="shop-price">€39,99</div>
+                <a href="https://onlynao.creator-spring.com/listing/onlynao-2025?product=1896&variation=105492" class="shop-btn">Acquista</a>
+            </div>
+            <div class="shop-item">
+                <img src="./Immagini/Borraccia.jpg" alt="Prodotto 3">
+                <h3>Borraccia</h3>
+                <div class="shop-price">€24,99</div>
+                <a href="https://onlynao.creator-spring.com/listing/buy-onlynao?product=1354&variation=104570" class="shop-btn">Acquista</a>
+            </div>
+            <div class="shop-item">
+                <img src="./Immagini/Tazza.jpg" alt="Prodotto 3">
+                <h3>Tazza</h3>
+                <div class="shop-price">€13,99</div>
+                <a href="https://onlynao.creator-spring.com/listing/buy-onlynao?product=1354&variation=104570" class="shop-btn">Acquista</a>
+            </div>
         </div>
     </section>
 
@@ -56,4 +118,5 @@
     <script src="script.js"></script>
     <script src="script2.js"></script>
 </body>
+
 </html>
